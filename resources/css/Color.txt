@@ -1,0 +1,10 @@
+--theme-color:#E73458;
+--balck-color:#000000;
+--light-pink-color:#EC697D
+--white-color:#FFFFFF;
+--btn2-bg-color:#EC697D;
+--heading-font-color:#EC697D;
+--btn-bg-color:#656667;
+--footer-bg-color:#3D3D3D;
+--body-font-color:#404852;
+
