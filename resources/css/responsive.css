@@ -1,0 +1,36 @@
+@media (max-width:1175px){
+    /* This Code will work for only Humbarger Active and Close Button*/
+    #navbar .humbarger{ display: block;}
+    #navbar .nav-menu{ display: none; position: absolute; width: 100%; height: 100vh; top: 8rem; left: 0; background: var(--balck-color); padding: 2rem 0; border-top: 2px solid var(--theme-color);}
+    #navbar .nav-menu ul{ flex-direction: column; align-items: start; text-align: left;}
+    #navbar .nav-menu ul li a{ color: var(--white-color);}
+    #navbar .nav-menu ul li:hover{ background: var(--white-color); width: 100%;}
+    #navbar .nav-menu ul li:hover a{ color: var(--theme-color);}
+    #navbar .btn, .btn-2{ padding: 0rem; color: none; font-size: none; font-family: var(--body-font); border-radius: none; background: none;}
+    #navbar .nav-menu ul li .log-btn,  
+    #navbar .nav-menu ul li .signup-btn, 
+    #navbar .nav-menu ul li .navbtn{ margin: 0; font-weight: normal;}
+    #navbar .btn:hover, .btn-2:hover{ background: none; border-radius: 0;}
+    /* Hero */
+    #hero .col_1_of_2 img {width: 100%;}
+    /* Footer */
+}
+@media (max-width:950px){
+    .row{ grid-template-columns: repeat(1, 1fr); grid-gap: 10rem; text-align: center; align-items: center;}
+    #hero .row h2{ width: 100%;}
+    #post .linfo h3{ width: 100%;}
+    #post .linfo ul li{ list-style:none;}
+    .post-items { text-align: left}
+/*-- ============================ Bank Secure Section ============================= */
+    #bank_secure .item .item-group .item-info{ align-items: left; text-align: left;}
+/*-- ============================ Footer Section ============================= */
+    #footer .container .grid{ grid-template-columns: repeat(2, 1fr); gap: 2rem;}
+    #footer .grid .item h3 { margin-bottom: 1.5rem; border-bottom: 0.3rem solid var(--theme-color);}
+    #footer .copyright-section { flex-direction: column;}
+    #footer .copyright-info {margin-bottom: 2rem;}
+}
+@media (max-width:450px){
+    .btn-group{ display: grid; grid-template-columns: repeat(1, 1fr); grid-gap: 1rem;}
+    #hero .btn-group .btn:nth-child(1){ margin-right: 0;}
+    #hero .btn-group .btn:nth-child(1):hover { margin-right: 0;}
+}
