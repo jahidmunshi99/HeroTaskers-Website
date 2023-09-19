@@ -13,6 +13,10 @@
     #navbar .btn:hover, .btn-2:hover{ background: none; border-radius: 0;}
     /* Hero */
     #hero .col_1_of_2 img {width: 100%;}
+    /*-- ============================ Flexible Section ============================= */
+    #flexible-section .col_1_of_2{flex-basis: 100%;}
+    #flexible-section .right .image {width: 100%;}
+    #flexible-section .right .payment-info {top: 1rem; right: 0rem;}
     /* Footer */
 }
 @media (max-width:950px){
