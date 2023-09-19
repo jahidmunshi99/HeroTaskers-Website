@@ -276,7 +276,7 @@
             <div class="item-title">
                 <h2>Boost your income by signing up with us! <br> Become a tasker</h2>
             </div>
-            <div class="row">
+            <div class="row" id="changebgcolor">
                 <div class="col_1_of_2 linfo">
                     <h3>Post your first task in seconds</h3>
                     <p>Get your to-do list finished and save time.</p>
@@ -286,7 +286,11 @@
                         <li>Receive quotes and pick the best tasker</li>
                     </ul>
                 </div>
-                <div class="col_1_of_2"></div>
+                <div class="col_1_of_2" style="display: flex; flex-direction: column; align-items: center;">
+                    <input id='rgbBx' type="text" placeholder="Here Your RGB Color Code" style="text-align: center; box-shadow: 1px 1px 5px rgba(1,1,1,0.4); width: 25rem; height: 4rem; padding: 1rem; border-radius: 0.5rem; outline: 0; border: 0.1rem solid var(--theme-color); margin-bottom: 2rem;">
+                    <input id='hexBx' type="text" placeholder="Here Your RGB Color Code" style="text-align: center; box-shadow: 1px 1px 5px rgba(1,1,1,0.4); width: 25rem; height: 4rem; padding: 1rem; border-radius: 0.5rem; outline: 0; border: 0.1rem solid var(--theme-color); margin-bottom: 2rem;">
+                    <button class="btn" id="colorchnagebtn" style="display: inline-block; width: 15rem; ">Change Color</button>
+                </div>
             </div>
         </div>
         <!-- 2nd Part Start -->
