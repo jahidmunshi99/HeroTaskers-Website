@@ -1,4 +1,6 @@
 @media (max-width:1175px){
+    /* common  */
+    .grid .item{ width: 100%;}
     /* This Code will work for only Humbarger Active and Close Button*/
     #navbar .humbarger{ display: block;}
     #navbar .nav-menu{ display: none; position: absolute; width: 100%; height: 100vh; top: 8rem; left: 0; background: var(--balck-color); padding: 2rem 0; border-top: 2px solid var(--theme-color);}
@@ -14,12 +16,20 @@
     /* Hero */
     #hero .col_1_of_2 img {width: 100%;}
     /*-- ============================ Flexible Section ============================= */
-    #flexible-section .col_1_of_2{flex-basis: 100%;}
+    #flexible-section .left { padding: 0;}
     #flexible-section .right .image {width: 100%;}
     #flexible-section .right .payment-info {top: 1rem; right: 0rem;}
+    /*-- ============================ Article Section ============================= */
+    #article-section .grid { grid-template-columns: repeat(2, 1fr);}
+
     /* Footer */
 }
-@media (max-width:950px){
+@media (max-width:970px){
+    /*-- ============================ Flexible Section ============================= */
+     #flexible-section .boost .item-title h2{ width: 100%; text-align: center;}
+     #flexible-section .left .item-title h2{ width: 100%;}
+    /*-- ============================ Article Section ============================= */
+    #article-section .grid { grid-template-columns: repeat(1, 1fr); width: 100%;}
     .row{ grid-template-columns: repeat(1, 1fr); grid-gap: 10rem; text-align: center; align-items: center;}
     #hero .row h2{ width: 100%;}
     #post .linfo h3{ width: 100%;}
@@ -27,11 +37,19 @@
     .post-items { text-align: left}
 /*-- ============================ Bank Secure Section ============================= */
     #bank_secure .item .item-group .item-info{ align-items: left; text-align: left;}
+    #bank_secure .item .item-title h2 { width: 100%; margin-top: 4rem;}
 /*-- ============================ Footer Section ============================= */
-    #footer .container .grid{ grid-template-columns: repeat(2, 1fr); gap: 2rem;}
+    #footer .container .grid{ grid-template-columns: repeat(2, 1fr); grid-gap: 5rem;}
     #footer .grid .item h3 { margin-bottom: 1.5rem; border-bottom: 0.3rem solid var(--theme-color);}
     #footer .copyright-section { flex-direction: column;}
     #footer .copyright-info {margin-bottom: 2rem;}
+}
+@media (max-width:675px){
+    /*-- ============================ Article Section ============================= */
+    #article-section .section-info { flex-direction: column;}
+    #article-section .section-info .section-btn{ margin: 1rem 0 2rem;}
+    /*-- ============================ Footer Section ============================= */
+    #footer .container .grid{ grid-template-columns: repeat(1, 1fr); gap: 3rem;}
 }
 @media (max-width:450px){
     .btn-group{ display: grid; grid-template-columns: repeat(1, 1fr); grid-gap: 1rem;}
