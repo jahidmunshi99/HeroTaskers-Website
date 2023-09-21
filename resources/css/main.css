@@ -1,4 +1,3 @@
-
 /*
     Theme Name: HeroTakder
     Theme URI: 
@@ -132,6 +131,17 @@ nav{ position: fixed; width: 100%; background: #f1f1fa; padding: 1rem 0; top:0; 
 #article-section .grid .item .post-info .post-title { margin: 1rem 0rem 0.5rem;}
 #article-section .grid .item .read-btn a{ margin-top: 2rem; color: var(--theme-color); display: inline-block;}
 #article-section .grid .item .read-btn a:hover{ color: var(--balck-color); transition: all 0.42s ease;}
+/*-- ============================ Top Categories ============================= */
+#top-categories { padding: 5rem 0;}
+#top-categories .grid { grid-template-columns:1fr 3fr; grid-column-gap: 5rem; grid-row-gap: 1rem; justify-content: space-between;}
+#top-categories .grid .item .section-logo{ width: 10rem; height: 8rem;}
+#top-categories .grid .section-title h3{ color: var(--theme-color); font-size: 3rem; margin: 2rem 0 0.5rem;}
+#top-categories .grid .section-details{ margin-top: 0;}
+#top-categories .item-group { width: 100%;}
+#top-categories .item-group .categories-list p{ border-bottom: 0.1rem solid var(--body-text-color); padding: 1.5rem 0 0.5rem;}
+#top-categories .grid .item-group{ display: grid; grid-template-columns: 1fr 3fr; grid-column-gap: 4rem;}
+#top-categories .categories-items{ display: grid; grid-template-columns: repeat(3, 1fr); grid-column-gap: 3rem; max-height: 25rem; padding: 5rem 0;  overflow: scroll;}
+
 
 
 /*-- ============================ Footer ============================= */
