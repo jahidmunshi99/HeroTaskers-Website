@@ -1,6 +1,7 @@
 const menuBar = document.querySelector("#menu");
 const closeBar = document.querySelector("#close");
 const navMenu = document.querySelector(".nav-menu");
+
 // const activeMenu = document.classList("nav-menu active");
 
 menuBar.addEventListener('click', ()=>{
@@ -16,6 +17,23 @@ closeBar.addEventListener('click', ()=>{
     closeBar.style.display='none'
     menuBar.style.display='block'
 })
+
+// Accordion
+let acc = document.querySelectorAll('.accrodionhead');
+let acb = document.querySelectorAll('.accrodionbody');
+
+for( var i = 0; i < acc.length; i++){
+    acc[i].addEventListener('click', function(){
+        this.classList.toggle('active');    
+        acb = this.nextElementSibling;
+        if(acb.style.display === 'block'){
+            acb.style.display = 'none'
+        }else{
+            acb.style.display = 'block'
+        }
+    })
+}
+
 // window.onload = ()=>{
 //     bgchange()
 // }
@@ -47,5 +65,5 @@ closeBar.addEventListener('click', ()=>{
 //     const red = Math.floor(Math.random()*255);
 //     const green = Math.floor(Math.random()*255);
 //     const blue = Math.floor(Math.random()*255);
-//     return('rgb({$red}, {$green}, {$blue})')    
+//     return('#({$red}, {$green}, {$blue})')    
 // }

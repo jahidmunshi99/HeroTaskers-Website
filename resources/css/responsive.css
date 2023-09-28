@@ -1,6 +1,8 @@
 @media (max-width:1175px){
     /* common  */
     .grid .item{ width: 100%;}
+    .group .col_1_of_4{ flex-basis: 49%; padding: 2%; }
+    .group .col_1_of_4:nth-child(3), .group .col_1_of_4:nth-child(4){ margin-top: 5rem; }
     /* This Code will work for only Humbarger Active and Close Button*/
     #navbar .humbarger{ display: block;}
     #navbar .nav-menu{ display: none; position: absolute; width: 100%; height: 100vh; top: 8rem; left: 0; background: var(--balck-color); padding: 2rem 0; border-top: 2px solid var(--theme-color);}
@@ -8,11 +10,11 @@
     #navbar .nav-menu ul li a{ color: var(--white-color);}
     #navbar .nav-menu ul li:hover{ background: var(--white-color); width: 100%;}
     #navbar .nav-menu ul li:hover a{ color: var(--theme-color);}
-    #navbar .btn, .btn-2{ padding: 0rem; color: none; font-size: none; font-family: var(--body-font); border-radius: none; background: none;}
+    #navbar .btn, #navbar .btn-2{ padding: 0rem; color: none; font-size: none; font-family: var(--body-font); border-radius: none; background: none;}
     #navbar .nav-menu ul li .log-btn,  
     #navbar .nav-menu ul li .signup-btn, 
     #navbar .nav-menu ul li .navbtn{ margin: 0; font-weight: normal;}
-    #navbar .btn:hover, .btn-2:hover{ background: none; border-radius: 0;}
+    #navbar .btn:hover, #navbar .btn-2:hover{ background: none; border-radius: 0;}
     /* Hero */
     #hero .col_1_of_2 img {width: 100%;}
     /*-- ============================ Flexible Section ============================= */
@@ -21,20 +23,32 @@
     #flexible-section .right .payment-info {top: 1rem; right: 0rem;}
     /*-- ============================ Article Section ============================= */
     #article-section .grid { grid-template-columns: repeat(2, 1fr);}
+/*-- ============================================ **** ============================================= 
+                                               About Page
+/*-- ============================================ ****  ============================================= */
 
-    /* Footer */
+/*-- ============================================ **** ============================================= 
+                                               Become A Tasker Page
+/*-- ============================================ ****  ============================================= */
 }
 @media (max-width:970px){
+    /* common  */
+    .group .col_1_of_2{ flex-basis: 100%; margin-top: 5rem; align-items: center; text-align: center;}
+    .group .col_1_of_3{ flex-basis: 99%; margin-top: 5rem; align-items: center; text-align: center;}
+    .group .col_1_of_3 .item-title { text-align: center;}
+    .row {grid-template-columns: repeat(1, 1fr); grid-gap: 10rem; text-align: center; align-items: center;}
+    .post-items{ text-align: left}
+    .group .col_1_of_4{ flex-basis: 99%; margin-top: 5rem;}
+    .group .col_1_of_4:nth-child(1){ flex-basis: 99%; margin-top: 2rem;}
+    .group .col_1_of_4 { margin-top: 2rem; }
     /*-- ============================ Flexible Section ============================= */
      #flexible-section .boost .item-title h2{ width: 100%; text-align: center;}
      #flexible-section .left .item-title h2{ width: 100%;}
     /*-- ============================ Article Section ============================= */
     #article-section .grid { grid-template-columns: repeat(1, 1fr); width: 100%;}
-    .row{ grid-template-columns: repeat(1, 1fr); grid-gap: 10rem; text-align: center; align-items: center;}
     #hero .row h2{ width: 100%;}
     #post .linfo h3{ width: 100%;}
     #post .linfo ul li{ list-style:none;}
-    .post-items{ text-align: left}
 /*-- ============================ Bank Secure Section ============================= */
     #bank_secure .item .item-group .item-info{ align-items: left; text-align: left;}
     #bank_secure .item .item-title h2 { width: 100%; margin-top: 4rem;}
@@ -47,6 +61,17 @@
     #footer .grid .item h3 { margin-bottom: 1.5rem; border-bottom: 0.3rem solid var(--theme-color);}
     #footer .copyright-section { flex-direction: column;}
     #footer .copyright-info {margin-bottom: 2rem;}
+/*-- ============================================ **** ============================================= 
+                                               About Page
+/*-- ============================================ ****  ============================================= */
+#about-section .section-title h3{ width: 100%;}
+#about-content .row{ grid-template-columns: repeat(1, 1fr); grid-gap: 4rem;}
+/*-- ============================================ **** ============================================= 
+                                               Become A Tasker Page
+/*-- ============================================ ****  ============================================= */
+#bct-quote-section .group .col_1_of_2 .quote h3 { width: 100%; margin: 3rem; }
+#bct-price-section .group .col_1_of_3 .item-title h4 { text-align: center;}
+#bct-price-section .group .col_1_of_3 .logo { margin: auto;}
 }
 @media (max-width:675px){
     /*-- ============================ Article Section ============================= */

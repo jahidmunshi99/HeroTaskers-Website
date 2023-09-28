@@ -33,6 +33,7 @@ html{ text-rendering: optimizeLegibility; font-size: 62.5%;}
     --footer-bg-color:#3D3D3D;
     --body-text-color:#404852;
     --post-section-bg-color:#EFEFEF;
+    --cream-color:#F4DBDD;
     /* Typography */
     --body-font:tfont;
     --body-medium-font:tmedium;
@@ -43,16 +44,20 @@ html{ text-rendering: optimizeLegibility; font-size: 62.5%;}
 h1, h2, h3, h4, h5{ font-family: var(--body-font); color: var(--body-text-color);}
 ul li{ list-style-type: none;}
 a{ text-decoration: none; color: var(--body-text-color);}
+span{ color: var(--theme-color);}
 img{ width: 100%; display: block;}
 button{ outline: none; border: none;}
 .row{ display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 3rem; align-items:end; align-items: center;}
-.group{ display: flex; justify-content: space-between; align-items: center;}
+.group{ display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;}
 .col_1_of_2{ flex-basis: 49.5%;}
+.col_1_of_3{ flex-basis: 33.3%; padding: 2rem;}
+.col_1_of_4{ flex-basis: 24.5%; padding:2rem}
 .grid{ display: grid; justify-items: center;}
 .section-title{ font-weight: bold; color: var(--theme-color); font-size: 2.5rem; line-height: 5rem;}
 .section-details{ margin-top: 2rem; line-height: 3rem;}
 .item-title{ font-weight: bold; color: var(--theme-color); font-size: 2.5rem; line-height: 5rem;}
 .item .item-details{ margin: 2rem 0;}
+.align-item-center{ position: absolute; top: 50%; transform: translateY(-50%);}
 .btn, .btn-2{ padding: 0.8rem 2rem; color: var(--white-color); font-size: 1.4rem; font-family: var(--heading-font); border-radius: 2rem; cursor: pointer;}
 .btn{ background: var(--theme-color); cursor: pointer;}
 .btn-2{ background: var(--btn-bg-color); cursor: pointer;}
@@ -156,3 +161,43 @@ footer .grid {grid-template-columns: repeat(5, 1fr); grid-gap: 5rem;}
 .app{ width: 18.53rem; height: 2.7rem; margin-right: 2rem;}
 .yft{ width: 8rem; height: 2.3rem;}
 .copyright-section .copyright-info a{ color: var(--theme-color); text-decoration: underline;}
+
+/*-- ============================================ **** ============================================= 
+                                               About Page
+/*-- ============================================ ****  ============================================= */
+#about-section{ background: url(../css/image/About-bg.png); background-position: center center; width: 100%; height: 100vh; background-size: cover;}
+#about-section .section-title h3{ width: 60%; color: var(--theme-color); padding-top: 10%; font-family: var(--body-medium-font); line-height:4.5rem;}
+/*-- ============================ About Content ============================= */
+#about-content { padding: 5rem 0;}
+#about-content .row{ grid-template-columns: 2fr 4fr; align-items: center;}
+#about-content .row .item-title h5{ font-size: 1.7rem; line-height: 3.3rem; font-family: var(--body-font);}
+/*-- ============================ About Question ============================= */
+#about-question{ padding: 5rem 0;}
+#about-question .accordion-group .accordion-item { margin-top: 2rem;}
+#about-question .accordion-group .accordion-item .accrodionhead { margin-bottom: 1.5rem; var(--btn-bg-color); cursor: pointer; transition: all 0.4s ease-in-out; padding: 0.2rem 0.5rem; border-bottom: 0.1rem solid #ccc;}
+#about-question .accordion-group .accordion-item .accrodionhead:hover { background: #ccc; }
+#about-question .accordion-group .accordion-item .accrodionhead .q-title { font-size: 1.7rem; font-family: var(--body-font); font-weight: 400;}
+#about-question .accordion-group .accordion-item .accrodionhead.active{ background: #ccc;}
+#about-question .accordion-group .accordion-item .accrodionhead.active i { transform: rotate(-180deg);}
+#about-question .accordion-group .accordion-item .accrodionbody { display: none;}
+/*-- ============================================ **** ============================================= 
+                                               Become A Tasker Page
+/*-- ============================================ ****  ============================================= */
+#bct-section .item-title h4{ text-align: center; font-size: 1.6rem; line-height: 2.5rem; margin: 1.5rem 0;}
+#bct-section .bct-hero-section{ background: url(../css/image/Become-a-tasker.png); background-position: center center; width: 100%; height: 100vh; background-size: cover; position: relative;}
+#bct-section .section-title h2{ width: 60%; color: var(--white-color); font-family: var(--body-medium-font); line-height:5.5rem;}
+#bct-section .btn-2{ margin-top: 3rem; padding: 1.1rem 4rem;}
+#bct-section .bct-services-section {  padding: 10rem 0; text-align: justify;}
+#bct-section .bct-services-section .group { align-items: start;}
+#bct-section .bct-services-section .logo { width: 5rem; height: 5rem; margin: 0 auto;}
+/*-- ============================ Price Section ============================= */
+#bct-price-section { padding: 5rem 0 ; background: var(--cream-color);}
+#bct-price-section .group .col_1_of_3 .logo{ width: 4rem; margin: auto 0;}
+#bct-price-section .group .col_1_of_3 .item-title h4{ text-align: start;}
+ /* ==================================== Quote-Image Section Start ====================================  */
+#bct-quote-section { padding: 5rem 0; background: var(--post-section-bg-color);}
+#bct-quote-section .group .col_1_of_2 .quote img{ width: 4rem;}
+#bct-quote-section .group .col_1_of_2 .quote h3{ width: 75%; margin: 1rem 0 3rem;}
+/* ==================================== About Question Start =================================== */
+#bct-section #about-question .section-title h4{ color: var(--theme-color); font-size: 2rem;}
+
